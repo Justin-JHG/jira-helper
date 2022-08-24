@@ -28,7 +28,6 @@ func newReleaseRequestBody(versionName, projectID string) (*releaseRequestBody, 
 	return &releaseRequestBody{
 		Name:        versionName,
 		Released:    true,
-		ReleaseDate: getDateString(),
 		Project:     projectID,
 	}, nil
 }
